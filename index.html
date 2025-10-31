@@ -1,0 +1,198 @@
+<!-- Hey everyone! Welcome to the JavaScript Endgame Day 1 workshop page.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Endgame Day 1</title>
+    <link rel="stylesheet" href="gdg.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="gdg-logo.png" alt="GDG Logo" class="logo-img">
+            </div>
+            <div class="nav-title">
+                <h2>Google Developer Group</h2>
+                <p class="nav-subtitle">MGMCOET</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ye starfield background ke liye hai jo page ke peeche dikhai dega -->
+    <div class="stars" id="stars"></div>  
+    <div class="container">
+        <header>
+              <!-- Ye ENDGAME Aur apke doubts thanos mar jaege session ke bad  -->
+            <h1>🚀 JavaScript Endgame</h1> 
+            <p class="subtitle">Master JavaScript Fundamentals Through Our Powerful Sessions</p>
+            <p style="font-size: 1.1em;">From <span style="color: #ffd700;">Zero</span> to <span style="color: #ffd700;">Hero</span> 🎯</p>
+        </header>
+
+
+        <!-- js file mei line 126 se samjho yha ho kya rha hai -->
+        <div class="live-demo">
+            <h2 class="demo-title">⚡ Live JavaScript in Action</h2>
+            <div class="code-display">
+                <span class="typing-effect" id="typingText">console.log("Welcome to JavaScript!");</span>
+            </div>
+            <div class="output-box" id="liveOutput">Welcome to JavaScript! 🎉</div>
+        </div>
+
+        <div class="interactive-section">
+            <h2 style="margin-bottom: 20px;">🎮 Interactive Demo - Variables & Operators</h2>
+            <div class="counter-display" id="counter">0</div>
+            <button class="btn" onclick="incrementCounter()">➕ Increment</button>
+            <button class="btn" onclick="decrementCounter()">➖ Decrement</button>
+            <button class="btn" onclick="resetCounter()">🔄 Reset</button>
+            <div class="output-box" id="operatorOutput">Click buttons to see operators in action!</div>
+        </div>
+
+        <!-- ye part static html css hai  -->
+        <div class="feature-showcase">
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Complete Fundamentals</h3>
+                <p>From basics to advanced concepts</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Hands-On Learning</h3>
+                <p>Interactive examples & live coding</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Real Projects</h3>
+                <p>Build actual working applications</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; font-size: 2.5em; margin: 60px 0 40px;">📖 What You'll Master</h2>
+
+        <div class="topic-grid">
+            <div class="topic-card">
+                <div class="topic-icon">🎯</div>
+                <h3 class="topic-title">JavaScript Basics</h3>
+                <ul class="topic-list">
+                    <li>What is JavaScript & History</li>
+                    <li>JS vs Java Comparison</li>
+                    <li>Browser & Console Connection</li>
+                    <li>Popular JS Frameworks</li>
+                    <li>Comments & Best Practices</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">💾</div>
+                <h3 class="topic-title">Variables & Data</h3>
+                <ul class="topic-list">
+                    <li>let, const & var Differences</li>
+                    <li>All Data Types</li>
+                    <li>Dynamic Typing Nature</li>
+                    <li>typeof & instanceof</li>
+                    <li>Naming Conventions</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">🔢</div>
+                <h3 class="topic-title">Operators</h3>
+                <ul class="topic-list">
+                    <li>Arithmetic Operators</li>
+                    <li>Increment & Decrement</li>
+                    <li>Operator Precedence</li>
+                    <li>Short-Circuiting</li>
+                    <li>Comparison Operators</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">🔀</div>
+                <h3 class="topic-title">Control Flow</h3>
+                <ul class="topic-list">
+                    <li>if, else if, else Statements</li>
+                    <li>Nested Conditions</li>
+                    <li>switch Statement</li>
+                    <li>Ternary Operator</li>
+                    <li>Truthy & Falsy Values</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">🔁</div>
+                <h3 class="topic-title">Loops Mastery</h3>
+                <ul class="topic-list">
+                    <li>for, while, do...while</li>
+                    <li>for...in & for...of</li>
+                    <li>break & continue</li>
+                    <li>Loop Optimization</li>
+                    <li>Avoiding Infinite Loops</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">⚙️</div>
+                <h3 class="topic-title">Functions</h3>
+                <ul class="topic-list">
+                    <li>Declaration & Expression</li>
+                    <li>Arrow Functions (ES6)</li>
+                    <li>Parameters & Arguments</li>
+                    <li>Anonymous Functions</li>
+                    <li>Function Hoisting</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">🎓</div>
+                <h3 class="topic-title">Advanced Concepts</h3>
+                <ul class="topic-list">
+                    <li>Scope (Global/Local/Block)</li>
+                    <li>Closures Introduction</li>
+                    <li>Higher-Order Functions</li>
+                    <li>Callback Functions</li>
+                    <li>Return Statement Magic</li>
+                </ul>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-icon">🌟</div>
+                <h3 class="topic-title">Bonus Skills</h3>
+                <ul class="topic-list">
+                    <li>Code Organization</li>
+                    <li>Debugging Techniques</li>
+                    <li>Best Practices</li>
+                    <li>Clean Code Writing</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+            <!-- look for js of this -->
+        <div class="interactive-section">
+            <h2 style="margin-bottom: 20px;">🎪 Function Demo - Higher Order Functions</h2>
+            <button class="btn" onclick="demonstrateCallback()">🚀 Run Callback Demo</button>
+            <button class="btn" onclick="demonstrateArrow()">⚡ Arrow Function Demo</button>
+            <button class="btn" onclick="demonstrateHigherOrder()">🎯 Higher-Order Demo</button>
+            <div class="output-box" id="functionOutput">Click any button to see functions in action!</div>
+        </div>
+
+        <div class="live-demo">
+            <h2 class="demo-title">🔄 Loop Demo - Watch It Work!</h2>
+            <button class="btn" onclick="runLoopDemo()">▶️ Run Loop Animation</button>
+            <div class="output-box" id="loopOutput">Ready to demonstrate loops...</div>
+        </div>
+
+        <footer>
+            <h2 style="margin-bottom: 20px;">🎉 Ready to Build This?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">After tomorrow's session, you'll have all the skills to create this and more!</p>
+            <p style="opacity: 0.8;">Built with ❤️ using HTML, CSS & Pure JavaScript</p>
+            <p style="margin-top: 20px; font-size: 1.1em; color: #ffd700;">See you in the session! 🚀</p>
+        </footer>
+    </div>
+
+    <script src="gdg.js"></script>
+        
+</body>
+</html>
